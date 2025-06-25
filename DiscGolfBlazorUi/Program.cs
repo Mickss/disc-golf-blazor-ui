@@ -1,4 +1,4 @@
-using DiscGolfBlazorU.Components;
+using DiscGolfBlazorUi.Components;
 
 var builder = WebApplication.CreateBuilder(args);
 

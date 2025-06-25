@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.13.35931.197 d17.13
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiscGolfBlazorU", "DiscGolfBlazorU\DiscGolfBlazorU.csproj", "{2B3A9CE5-21F4-4E2A-B056-B4FC3479983B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiscGolfBlazorUi", "DiscGolfBlazorUi\DiscGolfBlazorUi.csproj", "{CD2080B9-D68D-4C4F-9EBC-A6D0677051E6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{2B3A9CE5-21F4-4E2A-B056-B4FC3479983B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2B3A9CE5-21F4-4E2A-B056-B4FC3479983B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2B3A9CE5-21F4-4E2A-B056-B4FC3479983B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2B3A9CE5-21F4-4E2A-B056-B4FC3479983B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD2080B9-D68D-4C4F-9EBC-A6D0677051E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD2080B9-D68D-4C4F-9EBC-A6D0677051E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD2080B9-D68D-4C4F-9EBC-A6D0677051E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD2080B9-D68D-4C4F-9EBC-A6D0677051E6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {762491C3-0CB4-4634-AB3E-20C8BB8647C7}
+		SolutionGuid = {781BFC5C-017C-4AF0-AAEF-AE01A774FC44}
 	EndGlobalSection
 EndGlobal
