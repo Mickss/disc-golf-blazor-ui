@@ -9,10 +9,9 @@
 }
 else
 {
-    <table class="table-events">
+    <table class="table table-striped">
         <thead>
             <tr>
-                <th>ID</th>
                 <th>PDGA</th>
                 <th>Title</th>
                 <th>Region</th>
@@ -21,15 +20,14 @@ else
             </tr>
         </thead>
         <tbody>
-            @foreach (var ev in events)
+            @foreach (var e in events)
             {
                 <tr>
-                    <td>@ev.Id</td>
-                    <td>@ev.Pdga</td>
-                    <td>@ev.TournamentTitle</td>
-                    <td>@ev.Region</td>
-                    <td>@ev.Registration</td>
-                    <td>@ev.Vacancies</td>
+                    <td>@e.Pdga</td>
+                    <td>@e.TournamentTitle</td>
+                    <td>@e.Region</td>
+                    <td>@e.Registration</td>
+                    <td>@e.Vacancies</td>
                 </tr>
             }
         </tbody>
@@ -38,6 +36,9 @@ else
 
 @code {
     private List<DiscGolfEvent>? events;
+
+    [Inject]
+    public DiscGolfService EventService { get; set; }
 
     protected override async Task OnInitializedAsync()
     {
