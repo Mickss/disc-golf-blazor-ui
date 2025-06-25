@@ -1,5 +1,14 @@
 ﻿@namespace DiscGolfBlazorUi.Components.Services
 
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <base href="/" />
+    <link href="custom.css" rel="stylesheet" />
+    <link rel="stylesheet" href="DiscGolfBlazorUi.styles.css" />
+    <HeadOutlet />
+</head>
+
 <Router AppAssembly="@typeof(Program).Assembly">
     <Found Context="routeData">
         <RouteView RouteData="@routeData" DefaultLayout="@typeof(MainLayout)" />

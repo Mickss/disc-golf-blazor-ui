@@ -1,16 +1,18 @@
 ﻿@page "/events"
+@inject DiscGolfService EventService
 
-<PageTitle>Events</PageTitle>
+<h3>Upcoming Disc Golf Events</h3>
 
 @if (events == null)
 {
-    <p><em>Loading...</em></p>
+    <p>Loading events...</p>
 }
 else
 {
-    <table class="table table-striped">
+    <table class="table-events">
         <thead>
             <tr>
+                <th>ID</th>
                 <th>PDGA</th>
                 <th>Title</th>
                 <th>Region</th>
@@ -19,14 +21,15 @@ else
             </tr>
         </thead>
         <tbody>
-            @foreach (var e in events)
+            @foreach (var ev in events)
             {
                 <tr>
-                    <td>@e.Pdga</td>
-                    <td>@e.TournamentTitle</td>
-                    <td>@e.Region</td>
-                    <td>@e.Registration</td>
-                    <td>@e.Vacancies</td>
+                    <td>@ev.Id</td>
+                    <td>@ev.Pdga</td>
+                    <td>@ev.TournamentTitle</td>
+                    <td>@ev.Region</td>
+                    <td>@ev.Registration</td>
+                    <td>@ev.Vacancies</td>
                 </tr>
             }
         </tbody>
@@ -35,9 +38,6 @@ else
 
 @code {
     private List<DiscGolfEvent>? events;
-
-    [Inject]
-    public DiscGolfService EventService { get; set; }
 
     protected override async Task OnInitializedAsync()
     {
