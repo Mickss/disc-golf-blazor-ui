@@ -2,6 +2,11 @@ h1:focus {
     outline: none;
 }
 
+.navbar .nav-link {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
 .valid.modified:not([type=checkbox]) {
     outline: 1px solid #26b050;
 }

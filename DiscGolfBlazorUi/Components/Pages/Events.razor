@@ -1,0 +1,46 @@
+﻿@page "/events"
+
+<PageTitle>Events</PageTitle>
+
+@if (events == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>PDGA</th>
+                <th>Title</th>
+                <th>Region</th>
+                <th>Registration</th>
+                <th>Vacancies</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var e in events)
+            {
+                <tr>
+                    <td>@e.Pdga</td>
+                    <td>@e.TournamentTitle</td>
+                    <td>@e.Region</td>
+                    <td>@e.Registration</td>
+                    <td>@e.Vacancies</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    private List<DiscGolfEvent>? events;
+
+    [Inject]
+    public DiscGolfService EventService { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        events = await EventService.GetEventsAsync();
+    }
+}
