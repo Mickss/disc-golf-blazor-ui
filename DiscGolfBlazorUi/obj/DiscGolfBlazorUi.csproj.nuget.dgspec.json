@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Workspace\\DiscGolfBlazorUi\\DiscGolfBlazorUi\\DiscGolfBlazorUi.csproj": {}
+    "C:\\Workspace\\disc-golf-blazor-ui\\DiscGolfBlazorUi\\DiscGolfBlazorUi.csproj": {}
   },
   "projects": {
-    "C:\\Workspace\\DiscGolfBlazorUi\\DiscGolfBlazorUi\\DiscGolfBlazorUi.csproj": {
+    "C:\\Workspace\\disc-golf-blazor-ui\\DiscGolfBlazorUi\\DiscGolfBlazorUi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Workspace\\DiscGolfBlazorUi\\DiscGolfBlazorUi\\DiscGolfBlazorUi.csproj",
+        "projectUniqueName": "C:\\Workspace\\disc-golf-blazor-ui\\DiscGolfBlazorUi\\DiscGolfBlazorUi.csproj",
         "projectName": "DiscGolfBlazorUi",
-        "projectPath": "C:\\Workspace\\DiscGolfBlazorUi\\DiscGolfBlazorUi\\DiscGolfBlazorUi.csproj",
+        "projectPath": "C:\\Workspace\\disc-golf-blazor-ui\\DiscGolfBlazorUi\\DiscGolfBlazorUi.csproj",
         "packagesPath": "C:\\Users\\micha\\.nuget\\packages\\",
-        "outputPath": "C:\\Workspace\\DiscGolfBlazorUi\\DiscGolfBlazorUi\\obj\\",
+        "outputPath": "C:\\Workspace\\disc-golf-blazor-ui\\DiscGolfBlazorUi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
